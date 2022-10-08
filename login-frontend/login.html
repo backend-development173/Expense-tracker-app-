@@ -1,59 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
-    
+<link rel="stylesheet" href="style.css">
+<title> CSS Login Screen Tutorial </title>
 </head>
 <body>
-    <header>
-        <h1>Expense Tracker</h1>
-    </header>
-    <div id="mainContainer">
-        <h2>Login</h2>
-        <form  id="login">
-            <table>
-                    <td>
-                        <label for="email">Email Address:</label>
-                    </td>
-        
-                    <td>
-                        <input type="email"  id="email" name="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password">Password:</label>
-                    </td>
-        
-                    <td>
-                        <input type="password" id="password" name="password" required>
-                    </td>
-                </tr>
-
-            </table>
-                <button type="submit"  class="btn">Login</button> 
-                <hr>
-                <a href="./signup.html">New User? Sign Up Here</a>
+  <body>
+    <h2 id = 'expense'>Expense Tracker</h2>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>LOGIN</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form id= 'login-form' class="form">
+          <input id = 'email'type="text" placeholder="username"/>
+          <input id = 'password' type="password" placeholder="password"/>
+          <button>login</button>
+          <p class="message">Not registered? <a href="./signup.html">Create an account</a></p>
         </form>
-
+      </div>
     </div>
- 
-
-    <!-- Toggle notification -->
-    <div id="container"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
-    <script src="./login.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+<script src="./login.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-

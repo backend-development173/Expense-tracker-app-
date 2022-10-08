@@ -1,77 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign Up</title>
-    
-</head>
+
+ <link rel="stylesheet" href="./style1.css" />
 <body>
-    <header>
-        <h1>Expense Tracker</h1>
-    </header>
-    <div id="mainContainer">
-        <h2>Sign Up</h2>
-        <form  id="register">
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Name:</label>
-                    </td>
+    <main>
         
-                    <td>
-                        <input type="text" id="name" name="name" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email Address:</label>
-                    </td>
-        
-                    <td>
-                        <input type="email"  id="email" name="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password">Password:</label>
-                    </td>
-        
-                    <td>
-                        <input type="password" id="password" name="password" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="phone">Contact No:</label>
-                    </td>
-        
-                    <td>
-                        <input type="tel" id="phone" name="phone" required>
-                    </td>
-                </tr>
-            </table>
-                <button type="submit"  class="btn">SignUp</button> 
-                <hr>
-                <a href="./login.html">Already a user? Login Here</a>
-        </form>
+      <header>
+        <h1 style="color: black">Track your expense</h1>
+        <p style="color: black">
+            It helps to keep an accurate record of your money inflow and outflow.
+             Many people in India live on a fixed income, and they find that towards the end of the month they don't have sufficient money to meet their needs.
+        </p>
+      </header>
+      <form id = "register" method="post">
+        <h1>Registration Form</h1>
+        <div id="formPad">
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Full Name"
+            required
+          />
+          
+          <p class="errMsg"></p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+          <p class="errMsg"></p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <p class="errMsg"></p>
+          <input
+            type="number"
+            name="lname"
+            id="phone"
+            placeholder="Contact number"
+            required
+          />
+          <p class="errMsg"></p>
+          <input type="submit" value="Sign up" id="submit" />
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+            <a href="./login.html">Login now</a>
+          </p>
+        </div>
+      </form>
+    </main>
 
-    </div>
- 
-
-    <!-- Toggle notification -->
-    <div id="container"></div>
-
+    <footer>
+      <p class="attribution">
+       Project By
+        <a href="" target="_blank"
+          >Sharpener Mentor</a
+        >. Coded by
+        <a href=""></a>.
+      </p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-
