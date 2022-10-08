@@ -21,7 +21,7 @@ app.use('/user',authRoutes);
 
 sequelize.sync()
 .then(()=>{
-    app.listen(5000)
+    app.listen(3000)
 })
 .catch(err=>{
     console.log(err)

@@ -34,9 +34,10 @@ exports.register=(req,res,next)=>{
 }
 
 
-exports.login= async(req,res,next)=>{
+exports.login= async(req,res,)=>{
     try {
         const user=await User.findOne({where:{email:req.body.email}})
+        console.log(user.phone);
         if(!user)
         return res.status(404).json({success:false,message:'user does not exist'})
         
