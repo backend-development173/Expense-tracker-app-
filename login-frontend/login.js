@@ -1,4 +1,4 @@
-const form=document.getElementById('login')
+const form=document.getElementById('login-form')
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -11,9 +11,9 @@ form.addEventListener('submit',(e)=>{
 
     email.value=''
     password.value=''
-    axios.post('http://localhost:5000/user/login',obj)
+    axios.post('http://localhost:3000/user/login',obj)
     .then(res=>{
-        window.location.href='../index.html';
+        alert(res.data.message)
     })
     .catch(err=>{
         console.log(err)

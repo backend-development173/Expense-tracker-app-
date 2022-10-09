@@ -38,10 +38,20 @@ div {
   border: 3px solid #090e01;
   padding: 10px; 
   border-radius: 5px;
-  background-color: #0ff0a9;
+  background-color: #afe5d4;
   padding: 14px 20px;
 }
 label {
   display: block;
   width: 130px;
+}
+
+body{
+  background-image: url('https://images.pexels.com/photos/4475523/pexels-photo-4475523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  font-size: var(--bodyCopy);
+}
+h1{
+text-align: center;
+font-size: 100px;
+
 }
