@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const form=document.getElementById('register')
     form.addEventListener('submit',(e)=>{
         e.preventDefault();
-        const name=document.getElementById('name')
+        const name=document.getElementById('fname')
         const email=document.getElementById('email')
         const password=document.getElementById('password')
         const phone=document.getElementById('phone')
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded',()=>{
         phone.value=''
         axios.post('http://localhost:3000/user/signup',obj)
         .then(res=>{
-            console.log(res);
+            alert(res.data.message)
         })
         .catch(err=>{
-            console.log(err)
+            console.log(err.response.data.message)
         })
     })
 
